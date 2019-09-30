@@ -9,20 +9,27 @@ import {
 faAt
 } from '@fortawesome/free-solid-svg-icons'
 
-export default () => (
-    <nav class="footer navbar navbar-fixed-bottom navbar-expand-sm navbar-light bg-light">
+export default ({ siteTitle }) => (
+    <nav 
+      class="footer navbar navbar-fixed-bottom navbar-expand-sm navbar-light bg-light"
+      style={{
+        position: 'absolute',
+        bottom: '-20%',
+        width: '100%'
+      }}
+    >
 			<div class="container float-left">
-		  		<p></p>
+		  		<p>{siteTitle} {new Date().getFullYear()}</p>
 		  	</div>
 		  	<div class="float-right foot-text">
-		  		<p>Made with 
+		  		<small>Made with 
                   <strong><span style={{color: '#563D7C'}}> Bootstrap</span></strong> and 
-                  <strong><span style={{color: '#663399 '}}> Gatsby</span></strong>.</p>
+                  <strong><span style={{color: '#663399 '}}> Gatsby</span></strong>.</small>
 		  		<div class="icons">
                   <a href="https://twitter.com/JSONHowie" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon 
                     icon={faTwitter} 
-                    size="2x"
+                    size="lg"
                     style={{
                       color: 'rgba(29,161,242,1.00)'
                     }}
@@ -31,7 +38,7 @@ export default () => (
                 <a href="https://github.com/bt93" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon 
                     icon={faGithub} 
-                    size="2x"
+                    size="lg"
                     style={{
                         color: '#aaa'
                     }}
@@ -40,7 +47,7 @@ export default () => (
                 <a href="https://www.linkedin.com/in/jason-howie-837ba36b/" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon 
                     icon={faLinkedin} 
-                    size="2x"
+                    size="lg"
                     style={{
                         color: '#0077b5'
                     }}
@@ -49,7 +56,7 @@ export default () => (
                 <a href="mailto:contact@jasonrhowie.com">
                     <FontAwesomeIcon 
                         icon={faAt}
-                        size="2x"
+                        size="lg"
                         style={{
                             color: '#aaa'
                         }}

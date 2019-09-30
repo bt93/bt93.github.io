@@ -49,7 +49,7 @@ const Header = ({ siteTitle, tag }) => {
                 <a href="https://twitter.com/JSONHowie" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon 
                     icon={faTwitter} 
-                    size="2x"
+                    size="lg"
                     style={{
                       color: 'rgba(29,161,242,1.00)'
                     }}
@@ -58,7 +58,7 @@ const Header = ({ siteTitle, tag }) => {
                 <a href="https://github.com/bt93" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon 
                   icon={faGithub} 
-                  size="2x"
+                  size="lg"
                   style={{
                     color: '#fff'
                   }}
