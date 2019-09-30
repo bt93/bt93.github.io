@@ -10,7 +10,7 @@ import {
 import { 
   faHome,
   faPortrait 
-} from '@fortawesome/free-solid-svg-icons';
+} from '@fortawesome/free-solid-svg-icons'
 
 const Header = ({ siteTitle, tag }) => {
   const [open, setOpen] = useState(false)
