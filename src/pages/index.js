@@ -1,9 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Languages from '../components/languages'
 
 const IndexPage = () => (
   <Layout>
@@ -19,26 +19,7 @@ const IndexPage = () => (
     the Intro to Programming and Front-End Web Development Nanodegrees. 
     I am always pursuing to learn more, create and experience new technology.</p>
     <p><strong>I am versed in:</strong></p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>jQuery</li>
-      <li>Command Line, Git & Github</li>
-      <li>Responsive Web Design</li>
-      <li>Web Accessibility</li>
-      <li>ARIA</li>
-      <li>Gulp & Grunt</li>
-      <li>Reactjs</li>
-      <li>Test Driven Development</li>
-      <li>Jasmine</li>
-      <li>AJAX</li>
-      <li>Asynchronous JavaScript</li>
-      <li>Nodejs</li>
-      <li>Express</li>
-      <li>Bootstrap</li>
-      <li>Jekyll</li>
-    </ul>
+    <Languages />
     
     <p>Before I took the journey on the life of a programming, I was pursuing a degree in Music. Vocal Performance to be
     exact. I have a passion in performing and have performed in everything from Operas to contemporary pop-accapella groups
