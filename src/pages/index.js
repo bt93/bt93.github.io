@@ -10,7 +10,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1>About Me</h1>
     <figure>
-      <Image />
+      <Image source="jason.jpg"/>
       <figcaption>Jason Howie at the Metropolitan Opera House in New York City</figcaption>
     </figure>
     <p>My name is Jason Howie. I am a Full-Stack Web developer looking to further my education in programming and
