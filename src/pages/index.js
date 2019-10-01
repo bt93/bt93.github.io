@@ -13,9 +13,9 @@ const IndexPage = () => (
       <Image />
       <figcaption>Jason Howie at the Metropolitan Opera House in New York City</figcaption>
     </figure>
-    <p>My name is Jason Howie. I am a Front-End Web developer looking to further my education in programming and
-    find full-time work doing it. Currently I have spent about a year and a half learning programming and am Currently
-    in the Full-Stack JavaScript Techdegree with Treehouse. I also have finished two Nanodegrees with Udacity, including
+    <p>My name is Jason Howie. I am a Full-Stack Web developer looking to further my education in programming and
+    find full-time work doing it. Currently I have spent about a year and a half learning programming and am a recent graduate
+    of the Full-Stack JavaScript Techdegree with Treehouse. I also have finished two Nanodegrees with Udacity, including
     the Intro to Programming and Front-End Web Development Nanodegrees. 
     I am always pursuing to learn more, create and experience new technology.</p>
     <p><strong>I am versed in:</strong></p>
