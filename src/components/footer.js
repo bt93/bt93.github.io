@@ -35,7 +35,7 @@ export default ({ siteTitle }) => (
                     icon={faGithub} 
                     size="lg"
                     style={{
-                        color: '#aaa'
+                        color: 'black'
                     }}
                     />
                 </a>

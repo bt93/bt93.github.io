@@ -26,7 +26,13 @@ const Image = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+  <Img 
+    fluid={data.placeholderImage.childImageSharp.fluid} 
+    className="rounded img-fluid mx-auto d-block thumb-nail"
+    alt="Jason Howie" 
+  />
+  )
 }
 
 export default Image

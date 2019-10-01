@@ -64,7 +64,7 @@ const Header = ({ siteTitle, tag }) => {
                     icon={faGithub} 
                     size="lg"
                     style={{
-                      color: '#aaa'
+                      color: 'black'
                     }}
                   />
                   </a>

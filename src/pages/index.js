@@ -8,13 +8,44 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <h1>About Me</h1>
+    <figure>
       <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+      <figcaption>Jason Howie at the Metropolitan Opera House in New York City</figcaption>
+    </figure>
+    <p>My name is Jason Howie. I am a Front-End Web developer looking to further my education in programming and
+    find full-time work doing it. Currently I have spent about a year and a half learning programming and am Currently
+    in the Full-Stack JavaScript Techdegree with Treehouse. I also have finished two Nanodegrees with Udacity, including
+    the Intro to Programming and Front-End Web Development Nanodegrees. 
+    I am always pursuing to learn more, create and experience new technology.</p>
+    <p><strong>I am versed in:</strong></p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>jQuery</li>
+      <li>Command Line, Git & Github</li>
+      <li>Responsive Web Design</li>
+      <li>Web Accessibility</li>
+      <li>ARIA</li>
+      <li>Gulp & Grunt</li>
+      <li>Reactjs</li>
+      <li>Test Driven Development</li>
+      <li>Jasmine</li>
+      <li>AJAX</li>
+      <li>Asynchronous JavaScript</li>
+      <li>Nodejs</li>
+      <li>Express</li>
+      <li>Bootstrap</li>
+      <li>Jekyll</li>
+    </ul>
+    
+    <p>Before I took the journey on the life of a programming, I was pursuing a degree in Music. Vocal Performance to be
+    exact. I have a passion in performing and have performed in everything from Operas to contemporary pop-accapella groups
+    and everything in between. I went to Kent State Universty and graduated with a degree in Music with a concentration in
+    Vocal Performance. Although I loved performance I felt I needed to make myself more marketable, and found programming 
+    which I am starting to enjoy just as much.</p>
+    <p>You can view my Resume <a href="img/job_resume.pdf" target="_blank">here</a>.</p>
   </Layout>
 )
 
