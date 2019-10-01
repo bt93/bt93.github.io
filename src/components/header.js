@@ -16,7 +16,7 @@ const Header = ({ siteTitle, tag }) => {
   const [open, setOpen] = useState(false)
 
   return (
-    <header>
+    <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="navbarToggleExternalContent">
       <button
         onClick={() => setOpen(!open)}
@@ -42,40 +42,35 @@ const Header = ({ siteTitle, tag }) => {
                   <FontAwesomeIcon icon={faPortrait} /> Portfolio
                 </Link>
               </li>
-              <li className="nav-item" style={{
-                position: 'fixed',
-                left: '92%'
-              }}>
-                <a href="https://twitter.com/JSONHowie" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon 
-                    icon={faTwitter} 
-                    size="lg"
-                    style={{
-                      color: 'rgba(29,161,242,1.00)'
-                    }}
-                  />
-                </a>
-                <a href="https://github.com/bt93" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon 
-                  icon={faGithub} 
-                  size="lg"
-                  style={{
-                    color: '#fff'
-                  }}
-                />
-                </a>
-              </li>
             </ul>
         </div>
       </Collapse>
     </nav>
     <div className="jumbotron background">
-        <div className="container">
-          <h1 className="display-4">{siteTitle}</h1>
-          <p className="lead">{tag}</p>
+          <div className="container">
+            <h1 className="display-4">{siteTitle}</h1>
+            <p className="lead">{tag}</p>
+            <a href="https://twitter.com/JSONHowie" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon 
+                      icon={faTwitter} 
+                      size="lg"
+                      style={{
+                        color: 'rgba(29,161,242,1.00)'
+                      }}
+                    />
+                  </a>
+                  <a href="https://github.com/bt93" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon 
+                    icon={faGithub} 
+                    size="lg"
+                    style={{
+                      color: '#aaa'
+                    }}
+                  />
+                  </a>
+          </div>
         </div>
-      </div>
-  </header>
+      </>
   )
 }
 

@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from './footer'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './layout.css'
+import '../styles/styles.css'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -32,13 +32,7 @@ const Layout = ({ children }) => {
         siteTitle={data.site.siteMetadata.title}
         tag={data.site.siteMetadata.tag}
       />
-      <div
-        style={{
-          paddingBottom: '5em'
-        }}
-      >
-        <main>{children}</main>
-      </div>
+      <main className="main-content container">{children}</main>
       <Footer siteTitle={data.site.siteMetadata.title} />
     </>
   )
