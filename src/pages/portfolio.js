@@ -39,7 +39,7 @@ export const query = graphql`
                 node {
                   childMarkdownRemark {
                     frontmatter {
-                      date
+                      date(formatString: "MMMM YYYY")
                       description
                       image {
                         publicURL
