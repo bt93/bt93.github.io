@@ -8,10 +8,10 @@ export default ({ data }) => (
     <Layout>
         <SEO title="Portfolio" />
         <h1>Portfolio</h1>
-        {data.allFile.nodes.map((project, i) => {
-            return (
-                <div className="row" key={i}>
-                    <div className="col-sm-6">
+        <div className="row">
+            {data.allFile.nodes.map((project, i) => {
+                return (
+                    <div className="col-sm-6" key={i}>
                         <div className="card">
                             <img className="card-img-top portfolio"  src={project.childMarkdownRemark.frontmatter.image.publicURL} />
                             <div className="card-body">
@@ -22,21 +22,20 @@ export default ({ data }) => (
                             </div>
                         </div>
                     </div>
-                </div>
-            )
-        })}
+                )
+            })}
+        </div>
     </Layout>
 )
 
 export const query = graphql`
     query {
-        allFile(filter: {sourceInstanceName: {eq: "portfolio"}}) {
+        allFile(filter: {sourceInstanceName: {eq: "portfolio"}}, sort: {order: DESC, fields: birthtime}) {
             nodes {
               childMarkdownRemark {
                 frontmatter {
                   date(formatString: "MMMM YYYY")
                   description
-                  github_url
                   image {
                       publicURL
                   }
