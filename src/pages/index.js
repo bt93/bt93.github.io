@@ -5,7 +5,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Languages from '../components/languages'
 
-const IndexPage = () => (
+export default () => (
   <Layout>
     <SEO title="Home" />
     <h1>About Me</h1>
@@ -29,5 +29,3 @@ const IndexPage = () => (
     <p>You can view my Resume <a href="img/job_resume.pdf" target="_blank">here</a>.</p>
   </Layout>
 )
-
-export default IndexPage
