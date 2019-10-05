@@ -4,6 +4,23 @@ module.exports = {
     description: `Jason Howie is a Full-Stack Developer looking to break into the tech industry.`,
     author: `Jason Howie`,
     tag: `Full-Stack Web Developer`,
+    pageLinks: [
+      {
+        name: `Home`,
+        path: `/`,
+        faIcon: `faHome`,
+      },
+      {
+        name: `Portfolio`,
+        path: `/portfolio`,
+        faIcon: `faPortrait`,
+      },
+      {
+        name: `Blog`,
+        path: `/blog`,
+        faIcon: `faBlog`,
+      },
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

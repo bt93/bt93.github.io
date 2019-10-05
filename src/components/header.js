@@ -7,12 +7,9 @@ import {
   faTwitter,
   faGithub
 } from '@fortawesome/free-brands-svg-icons'
-import { 
-  faHome,
-  faPortrait 
-} from '@fortawesome/free-solid-svg-icons'
+import *  as Icons from '@fortawesome/free-solid-svg-icons'
 
-const Header = ({ siteTitle, tag }) => {
+const Header = ({ siteTitle, tag, pageLinks }) => {
   const [open, setOpen] = useState(false)
 
   return (
@@ -32,17 +29,16 @@ const Header = ({ siteTitle, tag }) => {
       <Collapse in={open}>
         <div className="navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link to="/" className="nav-link">
-                  <FontAwesomeIcon icon={faHome} /> Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/portfolio" className="nav-link">
-                  <FontAwesomeIcon icon={faPortrait} /> Portfolio
-                </Link>
-              </li>
-            </ul>
+            {pageLinks.map((page, i) => {
+              return (
+                <li className="nav-item" key={i}>
+                  <Link to={page.path} className="nav-link">
+                  {page.faIcon ? <FontAwesomeIcon icon={Icons[`${page.faIcon}`]} /> : ''} {page.name}
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
         </div>
       </Collapse>
     </nav>

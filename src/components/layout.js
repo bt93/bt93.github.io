@@ -14,13 +14,18 @@ import Footer from './footer'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/styles.css'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
           title
           tag
+          pageLinks {
+            faIcon
+            name
+            path
+          }
         }
       }
     }
@@ -31,6 +36,7 @@ const Layout = ({ children }) => {
       <Header 
         siteTitle={data.site.siteMetadata.title}
         tag={data.site.siteMetadata.tag}
+        pageLinks={data.site.siteMetadata.pageLinks}
       />
       <main className="main-content container">{children}</main>
       <Footer siteTitle={data.site.siteMetadata.title} />
