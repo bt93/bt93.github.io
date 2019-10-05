@@ -27,7 +27,7 @@ body {
   border-bottom: 2px #343a40 solid;
 }
 
-.last-blog {
+.blog-list:last-child {
   border-bottom: none;
 }
 

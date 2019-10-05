@@ -27,7 +27,7 @@ export default ({ data }) => {
             href={post.frontmatter.live_url} 
             target="_blank" 
             rel="noopener noreferrer" 
-            class="btn btn-info"
+            className="btn btn-info"
           >
               Live Demo
           </a>
@@ -39,13 +39,13 @@ export default ({ data }) => {
             href={post.frontmatter.github_url} 
             target="_blank" 
             rel="noopener noreferrer" 
-            class="btn btn-info"
+            className="btn btn-info"
           >
             Github Repo
           </a>
         </span>
 	      <span>
-          <Link to="/portfolio/" class="btn btn-info">Back</Link>
+          <Link to="/portfolio/" className="btn btn-info">Back</Link>
         </span>
       </div>
     </Layout>
