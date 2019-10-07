@@ -1,4 +1,5 @@
 ---
+type: portfolio
 title: List Pagination and Filtering
 live_url: https://jasonrhowie.com/list-pagination-and-filtering/
 github_url: https://github.com/bt93/list-pagination-and-filtering

@@ -1,4 +1,5 @@
 ---
+type: portfolio
 title: Restaurant Review Project
 live_url: https://jasonrhowie.com/restaurant-review/
 github_url: https://github.com/bt93/restaurant-review

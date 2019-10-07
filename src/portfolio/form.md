@@ -1,4 +1,5 @@
 ---
+type: portfolio
 title: Interactive Form
 live_url: https://jasonrhowie.com/interactive-form/
 github_url: https://github.com/bt93/interactive-form

@@ -1,4 +1,5 @@
 ---
+type: portfolio
 title: Feedreader Project
 live_url: https://jasonrhowie.com/feedreader/
 github_url: https://github.com/bt93/feedreader

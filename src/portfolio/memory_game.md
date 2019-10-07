@@ -1,4 +1,5 @@
 ---
+type: portfolio
 title: Memory Game Project
 live_url: https://jasonrhowie.com/memory-game/
 github_url: https://github.com/bt93/memory-game

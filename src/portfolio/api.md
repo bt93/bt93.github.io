@@ -1,4 +1,5 @@
 ---
+type: portfolio
 title: Public API Request
 live_url: https://jasonrhowie.com/public-api-request/
 github_url: https://github.com/bt93/public-api-request

@@ -1,4 +1,5 @@
 ---
+type: portfolio
 title: Build a Portfolio Site Project
 live_url: https://jasonrhowie.com/Build-a-Portfolio-Site/
 github_url: https://github.com/bt93/Build-a-Portfolio-Site

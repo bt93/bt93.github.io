@@ -1,4 +1,5 @@
 ---
+type: portfolio
 title: React Gallary App
 github_url: https://github.com/bt93/react-gallery-app
 image: ../images/portfolio/react-gallary.png

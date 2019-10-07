@@ -1,4 +1,5 @@
 ---
+type: portfolio
 title: SQL Library Manager
 github_url: https://github.com/bt93/sql-library-manager
 image: ../images/portfolio/sql-library.png

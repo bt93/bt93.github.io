@@ -1,4 +1,5 @@
 ---
+type: portfolio
 title: Code Your Own Quiz Project
 github_url: https://github.com/bt93/myquiz
 image: '../images/portfolio/quiz_screenshot.png'

@@ -1,4 +1,5 @@
 ---
+type: blog
 title: "Alarm Clock App"
 date: 2019-02-16 14:30:00 -0400
 comments: true

@@ -1,4 +1,5 @@
 ---
+type: blog
 title: "Nodejs and MySQL"
 date: 2019-02-22 11:10:00 -0400
 comments: true

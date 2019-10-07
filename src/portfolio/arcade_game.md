@@ -1,4 +1,5 @@
 ---
+type: portfolio
 title: Arcade Game Project
 live_url: https://jasonrhowie.com/arcade-game/
 github_url: https://github.com/bt93/arcade-game

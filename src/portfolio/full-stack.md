@@ -1,4 +1,5 @@
 ---
+type: portfolio
 title: Full Stack App
 live_url: https://jasonrhowie.com/full-stack-app/
 github_url: https://github.com/bt93/full-stack-app

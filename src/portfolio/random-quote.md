@@ -1,4 +1,5 @@
 ---
+type: portfolio
 title: Random Quote Generator
 live_url: https://jasonrhowie.com/random-quote-generator/
 github_url: https://github.com/bt93/random-quote-generator

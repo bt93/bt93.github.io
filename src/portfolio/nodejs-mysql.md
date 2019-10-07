@@ -1,4 +1,5 @@
 ---
+type: portfolio
 title: Nodejs and MySQL database
 github_url: https://github.com/bt93/node-mysql-demo
 image: ../images/portfolio/node-mysql.png
