@@ -8,7 +8,7 @@ export default ({ data }) => {
     const post = data.markdownRemark
     return (
         <Layout>
-            <SEO title="post" />
+            <SEO title={`${post.frontmatter.title} | Blog`} />
             <div className="container post">
                 <h5>{post.frontmatter.title}</h5>
                 <h6>{post.frontmatter.date}</h6>
@@ -45,7 +45,7 @@ query($slug: String!) {
       frontmatter {
         title
         comments
-        date(formatString: "dddd, MMMM YYYY")
+        date(formatString: "dddd, MMMM DD YYYY")
       }
     }
   }

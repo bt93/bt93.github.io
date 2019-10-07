@@ -30,7 +30,7 @@ export const query = graphql`
             node {
               childMarkdownRemark {
                 frontmatter {
-                  date(formatString: "dddd, MMMM YYYY")
+                  date(formatString: "dddd, MMMM DD YYYY")
                   title
                 }
                 excerpt(format: PLAIN)
