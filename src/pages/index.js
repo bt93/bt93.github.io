@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Languages from '../components/languages'
+import resume from '../misc/job_resume.pdf'
 
 export default () => (
   <Layout>
@@ -26,6 +27,6 @@ export default () => (
     and everything in between. I went to Kent State Universty and graduated with a degree in Music with a concentration in
     Vocal Performance. Although I loved performance I felt I needed to make myself more marketable, and found programming 
     which I am starting to enjoy just as much.</p>
-    <p>You can view my Resume <a href="img/job_resume.pdf" target="_blank">here</a>.</p>
+    <p><a href={resume} target="_blank" rel="noopener noreferrer">Click Here to view my resume.</a></p>
   </Layout>
 )
