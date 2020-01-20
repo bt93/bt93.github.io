@@ -74,3 +74,9 @@ figcaption {
     height: 15em;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  #title {
+    margin-left: 0%;
+  }
+}

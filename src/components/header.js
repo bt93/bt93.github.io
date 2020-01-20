@@ -43,7 +43,7 @@ const Header = ({ siteTitle, tag, pageLinks }) => {
       </Collapse>
     </nav>
     <div className="jumbotron background">
-          <div className="container">
+          <div className="container" id="title">
             <h1 className="display-4">{siteTitle}</h1>
             <p className="lead">{tag}</p>
             <a href="https://twitter.com/JSONHowie" target="_blank" rel="noopener noreferrer">
