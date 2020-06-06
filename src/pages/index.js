@@ -10,8 +10,7 @@ export default () => (
     <SEO title="Home" />
     <h1>About Me</h1>
     <figure>
-      <Image source="jason.jpg"/>
-      <figcaption>Jason Howie at the Metropolitan Opera House in New York City</figcaption>
+      <Image source="jason.jpg" alt="Jason Howie"/>
     </figure>
     <p>My name is Jason Howie. I am a Full-Stack Web developer looking to further my education in programming and
     find full-time work doing it. Currently I am a student at <a href="https://www.techelevator.com/" target="_blank" rel="noopener noreferrer">Tech Elevator</a> in Cleveland, Ohio,

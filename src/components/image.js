@@ -18,7 +18,7 @@ const Image = ({ source }) => {
     query {
       placeholderImage: file(relativePath: { eq: "jason.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -29,7 +29,7 @@ const Image = ({ source }) => {
   return (
   <Img 
     fluid={data.placeholderImage.childImageSharp.fluid} 
-    className="rounded img-fluid mx-auto d-block thumb-nail"
+    className="img-fluid mx-auto d-block thumb-nail"
     alt="Jason Howie" 
   />
   )

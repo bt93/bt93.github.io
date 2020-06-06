@@ -3,7 +3,7 @@ module.exports = {
     title: `Jason Howie`,
     description: `Jason Howie is a Full-Stack Developer looking to break into the tech industry.`,
     author: `Jason Howie`,
-    tag: `Full-Stack Web Developer`,
+    tag: `Full-Stack Developer`,
     pageLinks: [
       {
         name: `Home`,

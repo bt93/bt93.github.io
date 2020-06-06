@@ -37,7 +37,7 @@ body {
 
 .thumb-nail {
   width: 40%;
-  border-radius: 50%;
+  border-radius: 15px 50px 30px 5px;
   padding-bottom: 30px;
 }
 
