@@ -5,7 +5,8 @@ import { Collapse } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
   faTwitter,
-  faGithub
+  faGithub,
+  faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
 import *  as Icons from '@fortawesome/free-solid-svg-icons'
 
@@ -47,23 +48,32 @@ const Header = ({ siteTitle, tag, pageLinks }) => {
             <h1 className="display-4">{siteTitle}</h1>
             <p className="lead">{tag}</p>
             <a href="https://twitter.com/JSONHowie" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon 
-                      icon={faTwitter} 
-                      size="lg"
-                      style={{
-                        color: 'rgba(29,161,242,1.00)'
-                      }}
-                    />
-                  </a>
-                  <a href="https://github.com/bt93" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon 
-                    icon={faGithub} 
-                    size="lg"
-                    style={{
-                      color: 'black'
-                    }}
-                  />
-                  </a>
+              <FontAwesomeIcon 
+                icon={faTwitter} 
+                size="lg"
+                style={{
+                  color: 'rgba(29,161,242,1.00)'
+                }}
+              />
+              </a>
+              <a href="https://github.com/bt93" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon 
+                icon={faGithub} 
+                size="lg"
+                style={{
+                  color: 'black'
+                }}
+              />
+              </a>
+              <a href="https://www.linkedin.com/in/jason-robert-howie/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon 
+                icon={faLinkedin} 
+                size="lg"
+                style={{
+                  color: '#2867B2'
+                }}
+              />
+              </a>
           </div>
         </div>
       </>

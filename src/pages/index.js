@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Languages from '../components/languages'
-import resume from '../misc/job_resume.pdf'
 
 export default () => (
   <Layout>
@@ -15,7 +14,7 @@ export default () => (
       <figcaption>Jason Howie at the Metropolitan Opera House in New York City</figcaption>
     </figure>
     <p>My name is Jason Howie. I am a Full-Stack Web developer looking to further my education in programming and
-    find full-time work doing it. Currently I am a student at <a href="https://www.techelevator.com/" target="_blank">Tech Elevator</a> in Cleveland, Ohio,
+    find full-time work doing it. Currently I am a student at <a href="https://www.techelevator.com/" target="_blank" rel="noopener noreferrer">Tech Elevator</a> in Cleveland, Ohio,
     a 14-week coding bootcamp, learning to be a Full-Stack Developer. I am enrolled in their C#/.NET cohort, learning remotely due to the 
     COVID-19 pandemic. Before Tech Elevator I learned through various online resources earning a
     Full-Stack JavaScript Techdegree with Treehouse. I also have finished two Nanodegrees with Udacity, including
