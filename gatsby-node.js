@@ -88,4 +88,22 @@ exports.createPages = async ({ graphql, actions }) => {
             }
         })
     })
+
+
+    // create portfolio list pages
+const postPerPage = 5
+const numPages = Math.ceil(portfolio.data.allFile.edges.length / postPerPage)
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+        path: i === 0 ? 'portfolio' : `portfolio/${i + 1}`,
+        component: path.resolve("./src/pages/portfolio.js"),
+        context: {
+            limit: postPerPage,
+            skip: i * postPerPage,
+            numPages,
+            currentPage: i + 1,
+        }
+    }) 
+    })
 }
