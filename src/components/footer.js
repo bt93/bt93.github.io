@@ -18,8 +18,24 @@ export default ({ siteTitle }) => (
 		  	</div>
 		  	<div className="float-right foot-text">
 		  		<small>Made with 
-                  <strong><span style={{color: '#563D7C'}}> Bootstrap</span></strong> and 
-                  <strong><span style={{color: '#663399 '}}> Gatsby</span></strong>.</small>
+                  <strong><span style={{color: '#563D7C'}}> 
+                  <a
+                    className="footer-link"
+                    href="https://getbootstrap.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Bootstrap
+                  </a></span></strong> and 
+                  <strong><span style={{color: '#663399 '}}> 
+                  <a
+                    className="footer-link"
+                    href="https://www.gatsbyjs.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                  Gatsby
+                  </a></span></strong>.</small>
 		  		<div className="icons">
                   <a href="https://twitter.com/JSONHowie" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon 

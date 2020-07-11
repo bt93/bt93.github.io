@@ -9,7 +9,8 @@ import {
   faReact,
   faGitAlt,
   faGithub,
-  faBootstrap
+  faBootstrap,
+  faVuejs
 } from '@fortawesome/free-brands-svg-icons'
 import { 
   faDatabase 
@@ -58,6 +59,8 @@ export default ({ dotNetLogo }) => (
           />
           <p>Node.js</p>
         </div>
+      </div>
+      <div className="row">
         <div className="col-sm">
           <FontAwesomeIcon 
           icon={faReact} 
@@ -66,20 +69,21 @@ export default ({ dotNetLogo }) => (
           />
           <p>React.js</p>
         </div>
-      </div>
-      <div className="row">
+        <div className="col-sm">
+          <FontAwesomeIcon 
+          icon={faVuejs} 
+          size="5x"
+          style={{color: '#42b883'}}
+          />
+          <p>Vue.js</p>
+        </div>
         <div className="col-sm">
             <FontAwesomeIcon 
             icon={faGitAlt} 
             size="5x"
             style={{color: '#f1502f'}}
             />
-            <FontAwesomeIcon 
-            icon={faGithub} 
-            size="5x"
-            style={{color: '#211F1F'}}
-            />
-            <p>Git/GitHub</p>
+            <p>Git</p>
         </div>
         <div className="col-sm">
           <FontAwesomeIcon 

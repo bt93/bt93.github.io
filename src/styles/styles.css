@@ -65,6 +65,11 @@ figcaption {
   height: 20em;
 }
 
+.footer-link {
+  text-decoration: none;
+  color: inherit
+}
+
 #dotNetCore {
   width: 55%;
 }
