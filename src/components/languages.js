@@ -8,7 +8,6 @@ import {
   faNodeJs,
   faReact,
   faGitAlt,
-  faGithub,
   faBootstrap,
   faVuejs
 } from '@fortawesome/free-brands-svg-icons'

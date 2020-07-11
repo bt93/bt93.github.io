@@ -6,15 +6,16 @@
 
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+
 exports.onCreateNode = ({ node, getNode, actions }) => {
     const { createNodeField } = actions
     if (node.internal.type === `MarkdownRemark`) {
-        const portSlug = createFilePath({ node, getNode, basePath: `portfolio` })
-        createNodeField({
-            node,
-            name: `slug`,
-            value: portSlug
-        })
+        // const portSlug = createFilePath({ node, getNode, basePath: `portfolio` })
+        // createNodeField({
+        //     node,
+        //     name: `slug`,
+        //     value: portSlug
+        // })
 
         const blogSlug = createFilePath({ node, getNode, basePath: `blog` })
         createNodeField({
@@ -89,21 +90,31 @@ exports.createPages = async ({ graphql, actions }) => {
         })
     })
 
+    if (portfolio.errors) {
+        reporter.panicOnBuild(`Error while running GraphQL query.`)
+        return
+      }
+
+      if (blog.errors) {
+        reporter.panicOnBuild(`Error while running GraphQL query.`)
+        return
+      }
 
     // create portfolio list pages
-const postPerPage = 5
-const numPages = Math.ceil(portfolio.data.allFile.edges.length / postPerPage)
+    const projects = portfolio.data.allFile.edges
+    const postPerPage = 6
+    const numPages = Math.ceil(projects.length / postPerPage)
 
     Array.from({ length: numPages }).forEach((_, i) => {
-    createPage({
-        path: i === 0 ? 'portfolio' : `portfolio/${i + 1}`,
-        component: path.resolve("./src/pages/portfolio.js"),
+        createPage({
+        path: i === 0 ? `/portfolio` : `/portfolio/${i + 1}`,
+        component: path.resolve("./src/templates/portfolio.js"),
         context: {
             limit: postPerPage,
             skip: i * postPerPage,
             numPages,
             currentPage: i + 1,
-        }
+        },
     }) 
-    })
+})
 }
