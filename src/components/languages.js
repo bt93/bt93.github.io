@@ -15,9 +15,17 @@ import {
   faDatabase 
 } from '@fortawesome/free-solid-svg-icons'
 
-export default () => (
+export default ({ dotNetLogo }) => (
     <div className="container" style={{textAlign: 'center'}}>
       <div className="row">
+        <div className="col-sm">
+          <img 
+            src={dotNetLogo}
+            alt=".NET Core"
+            id="dotNetCore"
+          />
+          <p>C#/.NET</p>
+        </div>
         <div className="col-sm">
           <FontAwesomeIcon 
           icon={faHtml5}

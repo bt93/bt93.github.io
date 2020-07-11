@@ -1,11 +1,12 @@
 import React from "react"
+import { graphql } from 'gatsby'
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Languages from '../components/languages'
 
-export default () => (
+export default ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <h1>About Me</h1>
@@ -20,7 +21,7 @@ export default () => (
     the Intro to Programming and Front-End Web Development Nanodegrees. 
     I am always pursuing to learn more, create and experience new technology.</p>
     <p><strong>I am versed in:</strong></p>
-    <Languages />
+    <Languages dotNetLogo={data.file.publicURL}/>
     
     <p>Before I took the journey on the life of a programming, I was pursuing a life in Music. Vocal Performance to be
     exact. I have a passion in performing and have performed in everything from operas to contemporary pop-accapella groups
@@ -29,3 +30,11 @@ export default () => (
     which I am enjoying just as much.</p>
   </Layout>
 )
+
+export const query = graphql`
+query MyQuery {
+  file(relativePath: {eq: "dot-net-core-logo.png"}) {
+    publicURL
+  }
+}
+`
