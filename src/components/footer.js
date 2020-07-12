@@ -18,7 +18,7 @@ export default ({ siteTitle }) => (
 		  	</div>
 		  	<div className="float-right foot-text">
 		  		<small>Made with 
-                  <strong><span style={{color: '#563D7C'}}> 
+                  <strong> <span style={{color: '#563D7C'}}> 
                   <a
                     className="footer-link"
                     href="https://getbootstrap.com/"
@@ -27,7 +27,7 @@ export default ({ siteTitle }) => (
                   >
                     Bootstrap
                   </a></span></strong> and 
-                  <strong><span style={{color: '#663399 '}}> 
+                  <strong> <span style={{color: '#663399 '}}> 
                   <a
                     className="footer-link"
                     href="https://www.gatsbyjs.org/"
