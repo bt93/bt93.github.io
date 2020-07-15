@@ -23,7 +23,7 @@ export default ({ data }) => (
     <p><strong>I am versed in:</strong></p>
     <Languages dotNetLogo={data.file.publicURL}/>
     
-    <p>Before I took the journey on the life of a programming, I was pursuing a life in Music. Vocal Performance to be
+    <p>Before I took the journey on the life of a programmer, I was pursuing a life in Music. Vocal Performance to be
     exact. I have a passion in performing and have performed in everything from operas to contemporary pop-accapella groups
     and everything in between. I went to Kent State Universty and graduated with a degree in Music with a concentration in
     Vocal Performance. Although I loved performance I felt I needed to make myself more marketable, and found programming 
