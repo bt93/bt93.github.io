@@ -36,7 +36,7 @@ body {
 }
 
 .thumb-nail {
-  width: 40%;
+  width: 30%;
   border-radius: 15px 50px 30px 5px;
   padding-bottom: 30px;
 }
@@ -47,8 +47,8 @@ figcaption {
 }
 
 .background {
-  background-image: url('https://images.pexels.com/photos/853719/pexels-photo-853719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-  background-position: 15% 20%;
+  background-image: url('https://media.gettyimages.com/photos/cleveland-skyline-picture-id547122958?s=2048x2048');
+  background-position: 80% 20%;
   background-repeat: no-repeat;
   border-radius: 0%;
 }
