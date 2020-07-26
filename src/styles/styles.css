@@ -99,11 +99,25 @@ figcaption {
   #dotNetCore {
     width: 90%;
   }
+
+  .background {
+    background-position: 60% 20%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .background {
+    background-position: 57% 20%;
+  }
 }
 
 @media screen and  (max-width: 575px) {
   #dotNetCore {
     width: 20%;
+  }
+
+  .background {
+    background-position: 53% 20%;
   }
 }
 
