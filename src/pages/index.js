@@ -13,9 +13,9 @@ export default ({ data }) => (
     <figure>
       <Image source="jason.jpg" alt="Jason Howie"/>
     </figure>
-    <p>My name is Jason Howie. I am a Full-Stack Web developer looking to further my education in programming and
-    find full-time work doing it. I am a recent gradate of <a href="https://www.techelevator.com/" target="_blank" rel="noopener noreferrer">Tech Elevator</a> in Cleveland, Ohio,
-    a 14-week coding bootcamp, learning to be a Full-Stack Developer. I was enrolled in their C#/.NET cohort, learning remotely due to the 
+    <p>My name is Jason Howie. I am a Full-Stack Web developer looking to further my education in programming. 
+    Currently I am an Academic Fellow at <a href="https://www.techelevator.com/" target="_blank" rel="noopener noreferrer">Tech Elevator</a> in Cleveland, Ohio,
+    a 14-week coding bootcamp, where I was also previously a student, learning to be a Full-Stack Developer. I was enrolled in their C#/.NET cohort, learning remotely due to the 
     COVID-19 pandemic. Before Tech Elevator I learned through various online resources earning a
     Full-Stack JavaScript Techdegree with Treehouse. I also have finished two Nanodegrees with Udacity, including
     the Intro to Programming and Front-End Web Development Nanodegrees. 
